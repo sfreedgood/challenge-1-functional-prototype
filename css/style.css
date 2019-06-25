@@ -1,0 +1,34 @@
+body{
+  margin: 0 5vw;
+}
+
+.primary-content{
+  display: flex;
+}
+
+.primary-content > img{
+  margin: 0 5vw;
+}
+
+.card-container{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.sm-card{
+  height: 20vh;
+  width: 15vw;
+}
+
+.sm-card > img{
+  height: 60%;
+}
+
+.lg-card{
+  height: 40vh;
+  width: 20vw;
+}
+
+.lg-card > img{
+  height: 50%;
+}
