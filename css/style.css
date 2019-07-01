@@ -4,31 +4,81 @@ body{
 
 .primary-content{
   display: flex;
+  height: 30vh;
+  margin: 0 5vw 5vw;
+  border: 2px black solid;
+}
+
+.primary-content > p{
+  margin: 0 0 0 2%;
+  border: 2px black solid;
+  justify-self: right;
 }
 
 .primary-content > img{
-  margin: 0 5vw;
+  height: 100%;
+  width: 50vw;
 }
 
 .card-container{
+  margin: 0 5vw 5vw;
   display: flex;
   flex-flow: row wrap;
-}
-
-.sm-card{
-  height: 20vh;
-  width: 15vw;
+  height: fit-content;
+  justify-content: space-between;
+  border: 2px black solid;
 }
 
 .sm-card > img{
-  height: 60%;
+  height: calc(20vh * 0.8);
+}
+
+.sm-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
+  width: 15vw;
+  border: 2px black solid;
 }
 
 .lg-card{
-  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: fit-content;
   width: 20vw;
+  border: 2px black solid;
+
 }
 
 .lg-card > img{
-  height: 50%;
+  height: calc(40vh * 0.6);
+}
+
+@media only screen and (max-device-width: 800px) { 
+    .primary-content{
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 .5vw .5vw;
+      border: 2px black solid;
+    }
+
+    .primary-content > p{
+      margin: 0;
+      border: 2px black solid;
+      justify-self: flex-start;
+    }
+
+    .card-container{
+      margin: 0 .5vw .5vw;
+    }
+
+    .sm-card{
+      width: 40vw;
+    }
+
+    .lg-card{
+      width: 90vw;
+    }
 }
